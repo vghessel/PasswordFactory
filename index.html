@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Password Generator">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
+
+  <title>Password Factory</title>
+</head>
+
+<body>
+  <img class="logo" src="/assets/logo.png" alt="Band Logo">
+  <h1 class="name">Password Factory</h1>
+
+  <div class="container-input">
+    <span>I want a <strong><span id="valor"></span></strong> character password</span>
+    <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+
+    <button id="button" class="button-cta" onclick="generatePassword()">Give me a password!</button>
+  </div>
+
+  <div id="container-password" onclick="copyPassword()" class="container-password hide">
+    <span class="title">Your generated password is:</span>
+    <span id="password"  class="password"></span>
+    <span class="tooltip">Click on the password to copy 👆</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

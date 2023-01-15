@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&family=Sarala&display=swap');
+
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    max-width:100%;
+	height:auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 18px;
+    height: 100px;
+    width: 100px;
+}
+
+.name {
+    font-family: 'Rubik Storm', cursive;
+    text-align: center;
+    font-size: 65px;
+    color: rgb(231, 223, 223);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-input span {
+    font-family: 'Sarala', sans-serif;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    border-radius: 5px;
+    background: rgba(39,69,82,255);
+    outline: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.button-cta {
+    font-family: 'Sarala', sans-serif;
+    height: 40px;
+    width: 240px;
+    background-color: rgba(147,192,60,255);
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.button-cta:hover {
+    background-color: #acd46c
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-family: 'Sarala', sans-serif;
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+    border-color: #FFF;
+}
+
+.tooltip {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
